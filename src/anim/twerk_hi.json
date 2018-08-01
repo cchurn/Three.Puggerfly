@@ -1,0 +1,84 @@
+{"frames": {
+
+"XTRA_sh004_comp_v006_MV.1001.png":
+{
+	"frame": {"x":206,"y":608,"w":192,"h":205},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":35,"y":147,"w":192,"h":205},
+	"sourceSize": {"w":250,"h":444},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"XTRA_sh004_comp_v006_MV.1020.png":
+{
+	"frame": {"x":211,"y":406,"w":200,"h":206},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":36,"y":146,"w":200,"h":206},
+	"sourceSize": {"w":250,"h":444},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"XTRA_sh004_comp_v006_MV.1040.png":
+{
+	"frame": {"x":215,"y":1,"w":202,"h":206},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":146,"w":202,"h":206},
+	"sourceSize": {"w":250,"h":444},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"XTRA_sh004_comp_v006_MV.1060.png":
+{
+	"frame": {"x":1,"y":399,"w":207,"h":208},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":145,"w":207,"h":208},
+	"sourceSize": {"w":250,"h":444},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"XTRA_sh004_comp_v006_MV.1080.png":
+{
+	"frame": {"x":1,"y":200,"w":197,"h":210},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":33,"y":143,"w":197,"h":210},
+	"sourceSize": {"w":250,"h":444},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"XTRA_sh004_comp_v006_MV.1100.png":
+{
+	"frame": {"x":1,"y":608,"w":195,"h":203},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":31,"y":149,"w":195,"h":203},
+	"sourceSize": {"w":250,"h":444},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"XTRA_sh004_comp_v006_MV.1120.png":
+{
+	"frame": {"x":1,"y":1,"w":197,"h":212},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":35,"y":140,"w":197,"h":212},
+	"sourceSize": {"w":250,"h":444},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"XTRA_sh004_comp_v006_MV.1140.png":
+{
+	"frame": {"x":213,"y":209,"w":195,"h":204},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":32,"y":148,"w":195,"h":204},
+	"sourceSize": {"w":250,"h":444},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "twerk_hi.png",
+	"format": "RGBA8888",
+	"size": {"w":418,"h":804},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:5b792dac2b908601fc851d9d678c8774:b5f06d1ce12b866fa4ff99028a2531f6:2582810aea108ed6a042a5f46d562d25$"
+}
+}

@@ -1,0 +1,34 @@
+@import 'sass/general';
+@import 'sass/fonts';
+@import 'sass/creative';
+
+.portrait {
+  .container {
+    // background-image: url("./img/bg_portrait.jpg");
+  }
+}
+.landscape {
+  .container {
+    canvas {
+      display: none;
+    }
+    background-image: url("./img/landscape.jpg");
+    background-size: contain;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .rescale_reposition {
+    canvas {
+      display: none;
+    }
+    background-image: url("./img/landscape.jpg");
+    background-size: contain;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .end_buttons, .page, video {
+    display: none; opacity: 0;
+  }
+}

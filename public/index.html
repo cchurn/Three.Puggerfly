@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#000000">
+  <script src="scripts/WebAR_Camera.js"></script>
+  <title>App</title>
+</head>
+<body>
+<video width="300" height="224" id="a" class="p3__video"></video>
+<video width="300" height="224" id="b" ></video>
+<canvas id="videocanvas" width="300" height="224" style="display: none;"></canvas>
+<div id="container">
+  <div class="page intro">
+      <video width="320" height="568" poster="poster.jpg" webkit-playsinline playsinline loop autoplay muted>
+          <source type="video/mp4" src="intro-logo_2x.mp4">
+      </video>
+      <div class="intro__cta cta"></div>
+      <div class="intro__prompt"></div>
+  </div>
+    <div class="experience__notification"><div>Look around to find Puggerfly</div></div>
+  <div class="page experience">
+      <div class="overlay"></div>
+  </div>
+  <div class="page selfie">
+      <div class="end_buttons end_buttons__retake cta"></div>
+      <div class="end_buttons end_buttons__save cta"></div>
+      <div class="end_buttons end_buttons__finish cta"></div>
+      <canvas id="myCanvas" width="300" height="224"></canvas>
+      <video id="vid" width="300" height="224" webkit-playsinline="" loop playsinline="" muted="" autoplay="" style="opacity: 1;">
+          <source type="video/webm" src="video/dobwebm.webm">
+      </video>
+      <div class="selfie__grid">
+          <div></div>
+          <div></div>
+          <span></span>
+          <span></span>
+      </div>
+      <div class="selfie__button cta">
+          <div class="selfie__button__inner"></div>
+      </div>
+      <div class="selfie__backtoar cta"></div>
+      <div class="selfie__retake cta"></div>
+      <canvas id="sharecanvas" width="640" height="853"></canvas>
+      <canvas id="c" width="320" height="568"></canvas>
+      <canvas id="c2" width="320" height="568"></canvas>
+      <div class="selfie__overlay"></div>
+      <div class="selfie__instructions"></div>
+      <div class="pixi_container"></div>
+      <img id="shareimage" width="640" height="853"/>
+  </div>
+    <div class="test">
+        <video id="webar_video" width="320" height="568" poster="poster.jpg" autoplay ></video>
+    </div>
+</div>
+<div class="log">00</div>
+<div class="hide" id="test-canvas"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // WebAR_Project.init({container:'#container', width: 320, height: 568, gyro: true});
+    });
+</script>
+</body>
+</html>

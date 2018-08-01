@@ -1,0 +1,419 @@
+body, html {
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow: hidden; }
+
+.container {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  transform-origin: top left;
+  left: 50%;
+  top: 50%;
+  overflow: hidden; }
+
+.rescale_reposition {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  transform-origin: top left !important;
+  left: 50% !important;
+  top: 50% !important;
+  overflow: hidden;
+  width: 100% !important;
+  height: 100% !important;
+  transform: scale(1) translateX(-50%) translateY(-50%) !important; }
+  .rescale_reposition canvas {
+    position: absolute; }
+
+@font-face {
+  /*font-family: 'AndaleMono';
+  src: url('./fonts/AndaleMono.eot');
+  src: url('./fonts/AndaleMono.eot') format('embedded-opentype'),
+  url('./fonts/AndaleMono.woff2') format('woff2'),
+  url('./fonts/AndaleMono.woff') format('woff'),
+  url('./fonts/AndaleMono.svg') format('svg'),
+  url('./fonts/AndaleMono.ttf') format('truetype');
+  // font-weight: bold;
+  font-style: normal;*/ }
+
+body, html {
+  height: 100%; }
+
+body {
+  background-color: #000;
+  transition: 0.5s all; }
+
+#test-canvas {
+  position: absolute;
+  z-index: 2;
+  display: none; }
+
+#drawCanvas {
+  position: absolute;
+  top: 256px;
+  z-index: 8; }
+
+#drawCanvas2 {
+  position: absolute;
+  top: 256px;
+  left: 128px;
+  z-index: 8; }
+
+.hide {
+  width: 1px;
+  height: 1px;
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  position: relative;
+  display: inline-block; }
+
+#test-canvas {
+  pointer-events: none; }
+
+video {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: scale(1) translateX(-50%);
+  opacity: 1; }
+
+#webar_video {
+  pointer-events: none;
+  z-index: 0;
+  transition: all 1s; }
+
+.intro {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background: white; }
+  .intro video {
+    width: 100%; }
+  .intro__cta {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1; }
+  .intro__prompt {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-image: url("./img/camera_cta.png");
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 2; }
+
+.experience {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  display: block;
+  z-index: 2; }
+  .experience__notification {
+    background-color: rgba(41, 41, 41, 0.7);
+    height: 40px;
+    width: 100%;
+    top: 10%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    position: absolute;
+    z-index: 3;
+    display: none; }
+    .experience__notification div {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.selfie {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: none;
+  overflow: visible; }
+  .selfie video {
+    pointer-events: none;
+    top: auto;
+    height: auto !important;
+    width: 100%;
+    transform: none; }
+  .selfie__grid {
+    background-image: url(./img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    pointer-events: none; }
+    .selfie__grid div {
+      height: 100%;
+      width: 1px;
+      border-right: 1px solid rgba(255, 255, 255, 0.4);
+      position: absolute; }
+    .selfie__grid div:nth-child(1) {
+      left: 33%; }
+    .selfie__grid div:nth-child(2) {
+      left: 66%; }
+    .selfie__grid span {
+      width: 100%;
+      height: 1px;
+      border-top: 1px solid rgba(255, 255, 255, 0.4);
+      position: absolute; }
+    .selfie__grid span:nth-child(3) {
+      top: 33%; }
+    .selfie__grid span:nth-child(4) {
+      top: 66%; }
+  .selfie__button {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.8); }
+    .selfie__button__inner {
+      position: absolute;
+      z-index: 3;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: auto;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.5); }
+  .selfie canvas {
+    pointer-events: none; }
+  .selfie__overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-image: url(./img/filter1.png);
+    background-size: contain;
+    opacity: 0;
+    z-index: 4;
+    overflow: hidden; }
+  .selfie__instructions {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-image: url(./img/filter-swipe-cue.png);
+    background-size: contain;
+    opacity: 1;
+    z-index: 4;
+    overflow: hidden;
+    display: none; }
+  .selfie__backtoar {
+    position: absolute;
+    width: 50px;
+    height: 42px;
+    left: 8px;
+    bottom: 8px;
+    background-image: url(./img/cta_backtoar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3; }
+
+#videl {
+  z-index: 2;
+  top: 200px;
+  display: none; }
+
+.log {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 99999;
+  background: #000;
+  color: white;
+  display: none; }
+
+.overlay {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-image: url("./img/logo.png");
+  pointer-events: none;
+  z-index: 3;
+  background-position: right bottom; }
+
+#vid {
+  width: 100%;
+  height: 735px;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.centered {
+  top: 50%;
+  transition: all 1s;
+  transform: scale(1) translateX(-50%) translateY(-50%) !important; }
+
+.centered_selfie {
+  top: 50%;
+  transform: scale(1) translateY(-50%); }
+
+.test {
+  height: 100%;
+  opacity: 0; }
+
+.white {
+  background-color: #ffffff;
+  transition: 0.5s all; }
+
+.end_buttons {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0);
+  display: none; }
+  .end_buttons__retake {
+    z-index: 4;
+    display: none;
+    position: absolute;
+    height: 32px;
+    width: 100%;
+    background-image: url(./img/take_new_selfie.png);
+    background-size: auto 17px;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -45px;
+    left: 5px; }
+  .end_buttons__finish {
+    z-index: 4;
+    display: none;
+    position: absolute;
+    height: 36px;
+    width: 100%;
+    background-image: url(./img/finish.png);
+    background-size: auto 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -45px;
+    left: 0;
+    right: 0;
+    margin: auto; }
+  .end_buttons__save {
+    z-index: 4;
+    display: none;
+    position: absolute;
+    height: 36px;
+    width: 100%;
+    background-image: url(./img/save.png);
+    background-size: auto 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -45px;
+    left: 0;
+    right: 0;
+    margin: auto; }
+
+#videl, #maskel {
+  display: none; }
+
+#myCanvas {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.pixi_container {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%; }
+  .pixi_container canvas {
+    position: absolute;
+    bottom: 0; }
+
+canvas {
+  left: 0; }
+
+#a, #b {
+  width: 1px;
+  height: 1px; }
+
+#shareimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  width: 100%;
+  height: 100%; }
+
+#sharecanvas {
+  z-index: 2;
+  width: 160px;
+  display: block;
+  opacity: 0; }
+
+.landscape .container {
+  background-image: url("./img/landscape.jpg");
+  background-size: contain;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+  .landscape .container canvas {
+    display: none; }
+
+.landscape .rescale_reposition {
+  background-image: url("./img/landscape.jpg");
+  background-size: contain;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+  .landscape .rescale_reposition canvas {
+    display: none; }
+
+.landscape .end_buttons, .landscape .page, .landscape video {
+  display: none;
+  opacity: 0; }

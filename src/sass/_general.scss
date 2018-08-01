@@ -1,0 +1,50 @@
+@mixin fullscreen {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+@mixin fullscreen_image($url) {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-image: url($url);
+}
+body, html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+.container {
+  @include fullscreen();
+  transform-origin: top left;
+  left: 50%;
+  top: 50%;
+  overflow: hidden;
+}
+.rescale_reposition {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  transform-origin: top left !important;
+  left: 50% !important;
+  top: 50% !important;
+  overflow: hidden;
+
+  width: 100% !important;
+  height: 100% !important;
+  transform: scale(1) translateX(-50%) translateY(-50%) !important;
+  canvas {
+    position: absolute;
+  }
+}
+
